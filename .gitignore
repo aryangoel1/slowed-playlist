@@ -1,0 +1,32 @@
+# Environment variables
+.env
+
+# Credentials
+client_secret.json
+
+# Virtual environment
+.venv/
+venv/
+
+# Cache files
+.cache
+__pycache__/
+*.pyc
+*.pyo
+
+# macOS system files
+.DS_Store
+.DS_Store?
+._*
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Logs
+*.log
