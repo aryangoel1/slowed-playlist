@@ -38,7 +38,24 @@ Exchange of ClientID and Client Secret for access code (tied to app only not use
 
 Example: Client Credentials flow would access Spotify app features (ex: top hits), not user-specific items such as private playlists, liked songs, etc; thus no user login. 
 
-### API URL Headers
+### APIs
+What is an API: An API is essentially what allows 2 programs to communicate with each other. It allows one program (typically a client-side program) to access features of another service (defined by a set of rules) or modify parts of that service so that unrestricted access to data is not permitted. 
+
+### API Endpoints
+Definition: API endpoints function as specific addresses within an Application Programming Interface (API) that allow different software applications to communicate and exchange data. They are essentially the "doors" or "entry points" to specific functionalities or resources offered by an API.
+
+- Request Initiation: A client application (e.g., a mobile app, a web browser, or another server) sends a request to a specific API endpoint. This request typically uses an HTTP method (like GET, POST, PUT, DELETE) to indicate the desired action (e.g., retrieve data, create a new record, update an existing one, or delete data).
+
+- Endpoint URL: Each endpoint is represented by a unique URL (Uniform Resource Locator). This URL specifies the location of the resource or functionality being accessed. For example, https://api.example.com/users might be an endpoint to access user data, while https://api.example.com/users/123 could be an endpoint to access a specific user with ID 123.
+
+- Request Parameters and Body: The client's request may include parameters within the URL (e.g., ?query=bitcoin) or data in the request body (for methods like POST or PUT). These provide additional information needed for the server to process the request, such as search terms, data to be created, or updated values.
+
+- Server-Side Processing: When the server receives a request at an endpoint, it processes the request based on the specified HTTP method and any provided parameters or data. This involves interacting with databases, performing calculations, or executing other business logic.
+
+- Response Generation: After processing, the server generates a response, typically in a standardized format like JSON or XML. This response contains the requested data, a confirmation of the action performed, or an error message if something went wrong.
+
+- Response Delivery: The server sends this response back to the client application, which then parses the data and uses it as needed (e.g., displaying it to a user, storing it in a database, or triggering further actions).
+In essence, API endpoints provide a structured and standardized way for applications to interact, defining clear addresses and rules for requesting and receiving information or performing actions on a remote system.
 - Query Parameters, defined as key-value pairs in the URL and separated by the '&' symbol. They are separated from path parameters with the ? operator
 - Ex: https://api.example.com/v1/books?genre=fiction&limit=10. Genre and fiction are our query parameters while books is the path parameter
 
