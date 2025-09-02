@@ -33,7 +33,7 @@ def main():
         try:
             add_songs(videoId=video_id, playlistId=playlist_id)
             print(f"Added video {video_id} to playlist")
-        except Exception as e:
+        except Exception as e: # How to name errors
             print(f"Error adding video {video_id}: {e}")
     
     print("Process completed!")
