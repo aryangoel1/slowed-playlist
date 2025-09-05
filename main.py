@@ -5,7 +5,7 @@ Contains all the executable code that was originally in test.ipynb.
 """
 
 import pprint
-from functions import get_playlist_tracks, ids_slowed_version, create_playlist, add_songs
+from functions import get_playlist_tracks, ids_slowed_version, create_playlist, add_songs, get_youtube_quota
 
 
 def main():
@@ -35,9 +35,10 @@ def main():
             print(f"Added video {video_id} to playlist")
         except Exception as e: # How to name errors
             print(f"Error adding video {video_id}: {e}")
-    
+            
     print("Process completed!")
-
+    
+    print(f"Total Quota Used: {get_youtube_quota()}.")
 
 if __name__ == "__main__":
     main()

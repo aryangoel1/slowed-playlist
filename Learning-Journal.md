@@ -10,6 +10,11 @@ Building a slowed playlist application to understand how the internet works.
 
 ## What I'm Learning
 
+### URI: Locate resource with both name and location
+
+URL (most common): Locate resource with location 
+URN: Locate resource with name
+
 ### HTTP
 Hypertext Transfer Protocol: Protocol for establishing 
 connection between client and server, how two computers talk to each other
@@ -17,14 +22,14 @@ connection between client and server, how two computers talk to each other
 - Connectionless: client disconnect from the server, then when the response is ready the server re-establish the connection again and deliver the response
 - HTTP is stateless: both computers forget about each other after connection closes
 
-Request HTTP Methods: GET (retrieve data, no request body required), POST (store data in db, takes request body)
+### APIs
+An API is essentially a way for both computers to communicate with each other. It defines a way for users to perform CRUD operations on data living in respective URIs and usually get the data back in JSON.
+ 
+REST APIs implement CRUD (Create Read Update Destroy) methods with POST, GET, PUT, DELETE respectively. 
 
-Response HTTP Method: 200: ok, 404: file not found 
+Type of response: 200 --> SUCCESS; 400-level --> something wrong with our request; 500-level --> server error
 
-### URI: Locate resource with both name and location
-
-URL (most common): Locate resource with location 
-URN: Locate resource with name
+Pagination: You can limit the amount of data returned
 
 ### O-Auth 2.0
 Allows you to grant a third-party app access to protected resources without the need for user login
